@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": ["ES2020", "ESNext"],
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "removeComments": true,
+    "allowJs": false,
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "outDir": "lib",
+    "esModuleInterop": true,
+    "types": ["node"]
+  },
+  "include": ["src/**/*", "chalk"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

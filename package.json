@@ -1,0 +1,36 @@
+{
+  "name": "task-cli",
+  "version": "1.2.0",
+  "description": "工作日志小助手",
+  "private": true,
+  "bin": {
+    "task": "./bin/task.js"
+  },
+  "author": "yalda",
+  "license": "MIT",
+  "files": [
+    "bin/*",
+    "lib/*"
+  ],
+  "engines": {
+    "node": ">=14.18",
+    "yarn": "^1.22.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "fmt": "prettier --write \"src/**/*.{ts,json}\"",
+    "build": "rm -rf lib && esbuild ./src/bin.ts --bundle --platform=node --outfile=lib/task.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "@types/node": "^14.14.20",
+    "chalk": "^5.0.0",
+    "commander": "^8.3.0",
+    "dayjs": "^1.10.4",
+    "esbuild": "^0.14.8",
+    "jest": "^26.6.3",
+    "prettier": "^2.5.1",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.5.2"
+  }
+}
